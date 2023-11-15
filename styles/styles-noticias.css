@@ -1,0 +1,171 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    /* background-image: url('../imgs/icebergs-laguna-glaciares-islandia.jpg'); */
+    width: 100%;
+    min-height: 90vh; /* Cambiado de height a min-height */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1{
+    margin: 20px;
+    font-size: 60px;
+  }
+
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+  }
+  
+  .logo {
+    max-width: 100px;
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  nav a {
+    margin: 0 70px;
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  nav a:hover {
+    color: black;
+  }
+  
+  .right-button {
+    margin-left: auto;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    font-size: bold;
+  }
+  
+  .white-square {
+    margin: 20px;
+    
+  }
+  
+  .main-news {
+   
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .main-news img {
+    width: 45%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+
+
+  .container-main-new{
+    width: 800px;
+    height: 300px;
+    background-color: #6DAFFE;
+    position: absolute;
+    top: 43%;
+    right: 18%; 
+    border-bottom: 20px solid #3498db; /* Ancho y color del borde inferior */
+    padding-bottom: 10px; /* Espacio entre el contenido y el borde inferior */
+    /* Otros estilos para el contenedor */  
+}
+
+.container-main-new h3{
+    margin: 30px;
+    font-size: 40px;
+}
+
+.container-main-new p{
+    margin: 30px;
+    margin-right: 300px;
+}
+  
+.secondary-news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.news-item {
+    background-color: #fff; /* Color de fondo de las noticias secundarias */
+    flex: 0 0 30%; /* Ancho del 30%, ajusta según sea necesario */
+    padding: 15px;
+    position: relative; /* Añadido para posicionar el seudoelemento */
+}
+
+.news-item::before {
+    content: 'NOTICIAS'; /* Añadido rectángulo blanco */
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: #fff; /* Color del rectángulo blanco */
+    bottom: 18%;
+    left: 2,5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #0047FF; /* Color del texto */
+    border-top-right-radius: 5px; /* Añadido radio de borde para esquinas superiores derechas del rectángulo */
+}
+  
+  .news-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    /* position: fixed; */ /* Comenta o elimina esta línea */
+    bottom: 0;
+    width: 100%;
+}
+
+
+  
+
+  /* Media Query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .white-square {
+        margin: 20px;
+    }
+
+    .container-main-new {
+        width: 100%;
+        max-width: 100%;
+        right: 0;
+    }
+
+    .container-main-new p {
+        margin-right: 5%;
+    }
+
+    .news-item {
+        flex: 0 0 100%;
+        margin-bottom: 10px;
+    }
+}
+  
