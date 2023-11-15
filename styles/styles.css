@@ -16,10 +16,12 @@ body {
 }
 
 .header {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px;
+    padding: 20px; /* Cambiado de 30px a 20px */
 }
 
 .logo {
@@ -31,13 +33,14 @@ nav {
 }
 
 nav a {
-    margin: 0 70px;
+    margin: 0 50px; /* Cambiado de 70px a 30px */
     text-decoration: none;
     color: #000000;
+    transition: color 0.3s ease-in-out;
 }
 
 nav a:hover {
-    color: black;
+    color: green;
 }
 
 .right-button {
@@ -48,7 +51,12 @@ nav a:hover {
     border: none;
     cursor: pointer;
     border-radius: 40px;
-    font-size: bold;
+    font-weight: bold; /* Cambiado de font-size a font-weight */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.right-button:hover {
+    background-color: #2980b9;
 }
 
 .white-square {
@@ -59,6 +67,7 @@ nav a:hover {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
 }
 
 .white-square h1 {

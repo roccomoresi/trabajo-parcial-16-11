@@ -6,7 +6,7 @@
   }
   
   body {
-    /* background-image: url('../imgs/icebergs-laguna-glaciares-islandia.jpg'); */
+    background-image: url('../imgs/hielos.jpg'); 
     width: 100%;
     min-height: 90vh; /* Cambiado de height a min-height */
     background-size: cover;
@@ -23,31 +23,34 @@
 
 
   .header {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px;
-  }
-  
-  .logo {
+    padding: 20px; /* Cambiado de 30px a 20px */
+}
+
+.logo {
     max-width: 100px;
-  }
-  
-  nav {
+}
+
+nav {
     display: flex;
-  }
-  
-  nav a {
-    margin: 0 70px;
+}
+
+nav a {
+    margin: 0 50px; /* Cambiado de 70px a 30px */
     text-decoration: none;
     color: #000000;
-  }
-  
-  nav a:hover {
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
     color: black;
-  }
-  
-  .right-button {
+}
+
+.right-button {
     margin-left: auto;
     padding: 10px 20px;
     background-color: #3498db;
@@ -55,8 +58,13 @@
     border: none;
     cursor: pointer;
     border-radius: 40px;
-    font-size: bold;
-  }
+    font-weight: bold; /* Cambiado de font-size a font-weight */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.right-button:hover {
+    background-color: #2980b9;
+}
   
   .white-square {
     margin: 20px;
